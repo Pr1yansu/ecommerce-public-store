@@ -17,7 +17,8 @@ const Billboard: React.FC<Props> = ({ data }) => {
         <div className="absolute bottom-0 from-black bg-gradient-to-t to-transparent w-full h-full opacity-50"></div>
         <div className="h-full w-full flex flex-col justify-center items-center text-center gap-y-8">
           <h1 className="font-bold text-4xl sm:text-5xl lg:text-7xl sm:max-w-xl max-w-xs relative z-20 cursive text-violet-700">
-            {data.label}
+            <div className="absolute h-full w-full bg-black/50 scale-150 top-0 left-0 blur-lg" />
+            <div className="relative">{data.label}</div>
           </h1>
         </div>
       </div>
