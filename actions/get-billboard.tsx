@@ -8,6 +8,8 @@ export const getBillboard = async (id: string): Promise<BillboardProps> => {
     const res = await axios.get(`${URL}/${id}`);
     return res.data;
   } catch (error: any) {
+    console.log(error);
+
     return error;
   }
 };

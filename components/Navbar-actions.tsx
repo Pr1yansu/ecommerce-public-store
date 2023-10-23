@@ -21,7 +21,7 @@ const NavbarActions = () => {
   }
 
   return (
-    <div className="ml-auto flex items-center gap-4">
+    <div className="min-[450px]:ml-auto flex items-center gap-4">
       <Button
         className="flex items-center rounded-md bg-violet-500 px-4 py-2"
         onClick={() => {
